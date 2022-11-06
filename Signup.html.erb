@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+
+        window.onload = function() {
+
+            document.getElementById("gradeslist").style.display = "none";
+            var ex1 = document.getElementById("teacher"); 
+            var ex2 = document.getElementById("student"); 
+            ex1.onclick = hideGradesList;
+            ex2.onclick = showGradesList;
+
+        }
+        function showGradesList(){ 
+            document.getElementById("gradeslist").style.display = "block";
+
+        }
+        function hideGradesList(){
+            document.getElementById("gradeslist").style.display = "none";
+
+        }
+    </script>
+</head>
+<body>
+<div>
+
+    <!-- When sign up is successful, print the message -->
+
+    <div>
+        <div>
+            <h2>Sign Up</h2>
+
+            <form>
+
+                <!-- Username -->
+                <div>
+                    <label>Username</label>
+                    <div>
+                        <input type="text" id="username" required/>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label>Email</label>
+                    <div>
+                        <input type="text" id="email" required/>
+                    </div>
+                </div>
+
+                <!-- Verify Email -->
+                <div>
+                    <label > Verify Email</label>
+                    <div>
+                        <input type="text" id="verifyemail"  required/>
+                    </div>
+                </div>
+
+                <!-- Passoword -->
+                <div>
+                    <label for="password">Password</label>
+                          <div>
+                            <input type="password" id="password" required/> 
+                        </div>
+                </div>
+
+                <!-- Verify Password -->
+                <div>
+                    <label> Verify Password</label>
+                        <div> 
+                            <input type="password" id="verifypassword" required/> 
+                        </div>
+                </div>
+
+                <!-- Role -->
+                <div>
+                    <label>Role</label>
+                    <div><input type="radio" name="role" id="student" value="student"/> Student </div>
+                    <div><input type="radio" name="role" id="teacher" value="teacher"/> Teacher  </div>
+                </div> <br>
+
+                <!-- Grade -->
+                <div id="gradeslist">
+                    <label>Grade</label>
+                    <select name="gradeslist">
+                        <option value="grade1">Grade 1</option>
+                        <option value="grade2">Grade 2</option>
+                        <option value="grade3">Grade 3</option>
+                        <option value="grade4">Grade 4</option>
+                        <option value="grade5">Grade 5</option>
+                        <option value="grade6">Grade 6</option>
+                      </select>
+                </div>
+                <br>
+
+                <!-- Sign up Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Sign up</button>
+                </div>
+            </form>
+
+            <!-- Link to Sign in Page -->
+            <span>Already registered? <a href="/login/Login">Login here</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
