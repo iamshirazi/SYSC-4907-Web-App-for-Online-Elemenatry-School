@@ -2,40 +2,28 @@
 <html>
 <link rel="stylesheet" href="taskbar.css">
 <link rel="stylesheet" href="buttons.css">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <div class="col-md-offset-3">
+        <h1>Art</h1>
+    </div>
+</head>
+
+
+
 <body class="page">
 
 <div class="container">
     <div class="row">
-        <div class="col-md-offset-3">
-            <h1>Arts</h1>
-        </div>
-
-        <div class="navigation-main-wrapper" role="list">
-            <div class="navigation-item" role="listitem">
-                <a type="button" id="top">
-                    <img src="taskbarImages/help.png" alt="?">
-                    <span>Help</span> 
-                </a>
-            </div>
-            <div class="navigation-item" role="listitem">
-                <a type="button" id="top">
-                    <img src="taskbarImages/account.png" alt="?">
-                    <span>Account</span> 
-                </a>
-            </div>
-            <div class="navigation-item" role="listitem">
-                <a onclick="document.location='LandingZone.html'" type="button" id="top">
-                    <img src="taskbarImages/home.png" alt="?">
-                    <span>Home</span> 
-                </a>
-            </div>
-            <div class="navigation-item" role="listitem">
-                <a onclick="document.location='../Login.html'" type="button" id="top">
-                    <img src="taskbarImages/logout.png" alt="?">
-                    <span>Logout</span> 
-                </a>
-            </div>
-        </div>
+        <div id="header"></div>
 
         <div class="row">
             <div class="boxed" id="english">

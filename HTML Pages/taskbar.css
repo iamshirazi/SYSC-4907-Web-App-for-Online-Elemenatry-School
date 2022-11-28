@@ -4,6 +4,7 @@
     overflow: hidden;
     margin-left: 25%;
     margin-right: 25%;
+    border-radius: 25px;
   }
   
   /* Style the links inside the navigation bar */
@@ -19,7 +20,7 @@
   
   /* Change the color of links on hover */
   .navigation-item:hover {
-    background-color: #ddd;
+    background-color: #19b4cc;
     color: black;
   }
   
