@@ -25,7 +25,7 @@ function addSingle(div) {
     var newQuestion = document.querySelector('#' + div);
 
     newQuestion.innerHTML = "<label>Multiple Choices (single): </label><br />"; // ADDS A QUESTION LABEL 
-    newQuestion.innerHTML += "Choice A: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
+    newQuestion.innerHTML += "Correct Choice: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
     newQuestion.innerHTML += "Choice B: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
     newQuestion.innerHTML += "Choice C: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
     newQuestion.innerHTML += "Choice D: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
@@ -36,7 +36,7 @@ function addMultiple(div) {
     var newQuestion = document.querySelector('#' + div);
 
     newQuestion.innerHTML = "<label>Multiple Choices (multiple): </label><br />"; // ADDS A QUESTION LABEL 
-    newQuestion.innerHTML += "Choice A: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
+    newQuestion.innerHTML += "Correct Choice: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
     newQuestion.innerHTML += "Choice B: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
     newQuestion.innerHTML += "Choice C: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
     newQuestion.innerHTML += "Choice D: <input type='text' /><br />"; // ADDS THE INPUT TEXT ELEMENT
