@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Quiz Page</title>
+    <script src="JS/addQuizQuestion.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Help</th>
+        <th>Account</th>
+        <th>Home</th>
+        <th>Logout</th>
+      </tr>
+    </table>
+    <div>
+      <form>
+        <label for="htitle">Quiz Title: </label>
+        <input type="text" id="htitle" name="htitle" /><br />
+        <label for="instru">Instructions: </label>
+        <input type="text" id="instru" name="instru" /><br />
+        <input
+          type="button"
+          value="Add Question"
+          onclick="addQuestion()"
+        /><br />
+        <div id="questionSection">
+          <label>Question: </label> <br />
+          <input
+            type="radio"
+            name="question"
+            value="1"
+            onclick="addSingle('choice1')"
+          />Multiple Choice (single)<br />
+          <input
+            type="radio"
+            name="question"
+            value="2"
+            onclick="addMultiple('choice1')"
+          />Multiple Choice (multiple)<br />
+          <input
+            type="radio"
+            name="question"
+            value="3"
+            onclick="addShort('choice1')"
+          />Short Answer<br />
+          <div id="choice1"></div>
+        </div>
+        <input type="button" value="OK" /> <br />
+        <input type="submit" value="Post" />
+      </form>
+    </div>
+  </body>
+</html>

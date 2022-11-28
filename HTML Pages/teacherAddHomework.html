@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Homework Page</title>
+    <script src="JS/addHomeworkQuestion.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Help</th>
+        <th>Account</th>
+        <th>Home</th>
+        <th>Logout</th>
+      </tr>
+    </table>
+    <div>
+      <form>
+        <label for="htitle">Homework Title: </label>
+        <input type="text" id="htitle" name="htitle" /><br />
+        <label for="instru">Instructions: </label>
+        <input type="text" id="instru" name="instru" /><br />
+        <input
+          type="button"
+          value="Add Question"
+          onclick="addQuestion()"
+        /><br />
+        <label for="question">Question: </label>
+        <div id="questionSection">
+          <input type="text" id="question" name="question" /><br />
+        </div>
+        <input type="submit" value="Post" />
+      </form>
+    </div>
+  </body>
+</html>
